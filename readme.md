@@ -1,5 +1,3 @@
-# Draft
-
 1. **Daily Quote Generator:** Select a random quote for the day and prints it. Optional: The same quote should be generated for a given day.
 
 	Your task:
