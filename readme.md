@@ -2,7 +2,7 @@
 
 	Your task:
 	1. Complete the get_quote_of_the_day() function
-	2. Set up a cron job to run this script daily at 8:00 AM and append the output to a file
+	2. Print the crontab that would run this script daily at 8:00 AM and append the output to a file
 
 	Hint: Look up `random.choice()` to select a random item from a list. You can use the `date` module to get the current date and set a seed for the random number generator.
 2. **Word Frequency Counter:** Read a text file (example code included) and count the frequency of each word, ignoring case.
