@@ -1,3 +1,5 @@
+# Assignment
+
 1. **Daily Quote Generator:** Select a random quote for the day and prints it. Optional: The same quote should be generated for a given day.
 
 	Your task:
@@ -46,3 +48,48 @@
 05886116467109405077541002256983155200055935729725
 71636269561882670428252483600823257530420752963450
 ```
+
+# Hints & tips
+
+## Assignment updates
+
+I sometimes update assignments to make them clearer or remove unanticipated difficulties, so make sure your fork (copy) of the assignment stays up to date!
+
+You can do this two ways:
+1. Upon opening your fork of the repository, there may be a "Sync Fork" button. Click it and select "Fetch upstream".
+2. Merge in my "Pull Request" by clicking "X commits behind" or "Pull Requests". Then click through to merge in the changes.
+
+![](media/sync_fork.webp) ![](media/commits_behind.png) ![](media/pull_request.png)
+
+## Getting `nano` as your $EDITOR
+
+If `crontab -e` opens an editor you're not familiar with (likely `vim`), you can specify which editor to use with the $EDITOR environment variable.
+
+A few ways to do this:
+1. Persistently set the $EDITOR variable by walking through the slides at the beginning of [Lecture 04](https://ds217.badmath.org/04)
+2. Set the variable for your current session using `export EDITOR=nano`
+3. Set the variable just for the current command using `EDITOR=nano crontab -e`
+
+## Codespaces don't have `crontab` installed
+
+This one surprised me. Apparently GitHub doesn't expect you to keep Codespaces open long enough to use `cron` for automation. 
+
+You can install `cron` and `crontab` using `apt`, the package manager for Debian and Ubuntu Linux:
+
+`sudo apt update; sudo apt install cron`
+
+This runs two commands in sequence separated by a semicolon:
+
+- `sudo` runs whatever follows as the "Super User", allowing you to make changes like installing software outside your home directory or even breaking the operating system
+- `apt update` tells the package manager to check for the latest versions of software available
+- `apt install cron` tells the package manager to look for a package called cron and install it if available
+
+## Catching most punctuation
+
+Punctuation can give you trouble counting words; e.g., 'word', 'word.', and 'word?' counted separately. You can strip leading and trailing characters using the `strip()` method in python.
+
+- `my_string.strip()` removes leading and trailing whitespace
+- `my_string.strip('ga,') removes leading an trailing 'g', 'a', and ',' characters
+- [string.punctuation](https://www.geeksforgeeks.org/string-punctuation-in-python/) is a constant that contains common punctuation marks (need to `import string` first)
+
+
