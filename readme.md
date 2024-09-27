@@ -57,9 +57,10 @@ I sometimes update assignments to make them clearer or remove unanticipated diff
 
 You can do this two ways:
 1. Upon opening your fork of the repository, there may be a "Sync Fork" button. Click it and select "Fetch upstream".
-2. Merge in my "Pull Request" by clicking "X commits behind" or "Pull Requests". Then click through to merge in the changes.
-
-![](media/sync_fork.webp) ![](media/commits_behind.png) ![](media/pull_request.png)
+	![width 100](media/sync_fork.webp) 
+3. Merge in my "Pull Request" by clicking "X commits behind" or "Pull Requests". Then click through to merge in the changes.
+![](media/commits_behind.png)
+![](media/pull_request.png)
 
 ## Getting `nano` as your $EDITOR
 
